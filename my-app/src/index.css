@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ul.bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  height: auto;
+  background-color: blueviolet;
+  position: fixed;
+  overflow: auto;
+}
+
+ul.bar li a {
+  float: right;
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  ul.bar li a {
+    background-color: black;
+    text-align: center;
+    position: relative;
+    float: none;
+  }
+}
